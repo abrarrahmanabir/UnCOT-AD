@@ -4,14 +4,29 @@ Alzheimer’s Disease (AD) is a progressive neurodegenerative disorder, posing a
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/abrarrahmanabir/DeepRNA-Twist.git
-   cd DeepRNA-Twist
+   git clone https://github.com/abrarrahmanabir/UnCOT-AD.git
+   cd UnCOT-AD
 
 
-2. **Install dependencies**:
+2. **Dependencies**
 
-   ```bash
-   pip install numpy tensorflow torch scikit-learn pandas transformers keras tqdm
+To run the code, ensure you have the following packages installed:
+
+- **Python** >= 3.6
+- **Torch** (PyTorch) >= 1.6.0
+- **Torchvision** (Optional, depending on model usage in PyTorch)
+- **Tqdm** >= 4.41.0 for progress bars
+- **Matplotlib** >= 3.2.2 for plotting
+- **Pandas** >= 1.1.3 for data manipulation
+- **Numpy** >= 1.18.5 for numerical computations
+- **Scikit-learn** >= 0.23.2 for model evaluation and preprocessing
+
+3. **Installation**
+
+You can install these dependencies with pip:
+```bash
+pip install torch torchvision tqdm matplotlib pandas numpy scikit-learn
+
 
 
 ### How to Train
