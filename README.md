@@ -26,40 +26,31 @@ To run the code, ensure you have the following packages installed:
 You can install these dependencies with pip:
 ```bash
 pip install torch torchvision tqdm matplotlib pandas numpy scikit-learn
+```
 
 
 
-### How to Train
-1. **Train the Model**:
-To start the training process, execute the following command:
+### Usage
+1. **Train the Cross Omics Translation Model**:
+To start the training process, execute the following command. `Data/` folder contains the datasets for training. Running this command will create trained Cross Omics Translation Model which you can use for inference.
 
    ```bash
-   python main.py
+   python translation.py
 
 ## How to Run Inference
 
-### Requirements:
-- Pre-trained model: `trained_DeepRNAtwist.h5`
-- Input dataset: `Data/combined_full.csv`
-- Language model embeddings must be loaded as part of the inference process : `emb.pkl`.
-- You can find them in : https://drive.google.com/drive/folders/1giw02VxTG_Eg2HzNyW0xmtWtfjPoBskA?usp=sharing
-
-### Steps to Run Inference:
-
 1. **Prepare the Input Data**:
-   Ensure that the input file `Data/combined_full.csv` is available in the repository's `Data/` folder. This CSV file contains the RNA sequence and angles for which you want to predict torsion angles.
+  `Data/` folder contains gene expression, proteomics and DNA methylation datasets.
 
 2. **Load the Pre-trained Model**:
    The pre-trained model `trained_DeepRNAtwist.h5` is included in the repository. The inference script will load this model automatically to perform predictions.
-
-3. **Load Language Model Embeddings**:
-   For the inference process, the necessary language model embeddings  `emb.pkl` have to be loaded for prediction.
 
 4. **Run the Inference**:
    To perform inference on the provided dataset, run the following command:
    
    ```bash
-   python inference.py 
+   python inference.py
+   ```
 
 
 
