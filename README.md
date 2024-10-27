@@ -37,7 +37,7 @@ To start the training process, execute the following command. `Data` folder cont
    ```bash
    python translation.py
 
-## Inference : Cross Omics Translation and AD Prediction
+## AD Prediction
 
 1. **Prepare the Input Data**:
   `Data` folder contains gene expression, proteomics and DNA methylation datasets.
@@ -45,7 +45,7 @@ To start the training process, execute the following command. `Data` folder cont
 2. **Load the Pre-trained Model**:
    The pre-trained models are included in `trained models` folder. You can either use these pretrained Cross Omics Translation Models or train them. 
 
-4. **Run the Inference**:
+4. **AD Prediction Module**:
    To perform the experiment of gene expression and proteomics, run the following command:
    
    ```bash
@@ -61,6 +61,17 @@ To start the training process, execute the following command. `Data` folder cont
    ```bash
    python dm_prot.py
    ```
+   These commands will use the pretrained cross omics translation model and train and infer AD prediction
+
+   ## Example Usage with Any Two Omics
+   If you want to train your own translation module, then put the path of your two omics datasets  in `omic1` and `omic2` of `Example/translation.py` and run the following command:
+   
+   ```bash
+   cd Example
+   python translation.py
+   ```
+   
+   
 
 
 
