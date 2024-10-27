@@ -32,24 +32,34 @@ pip install torch torchvision tqdm matplotlib pandas numpy scikit-learn
 
 ### Usage
 1. **Train the Cross Omics Translation Model**:
-To start the training process, execute the following command. `Data/` folder contains the datasets for training. Running this command will create trained Cross Omics Translation Model which you can use for inference.
+To start the training process, execute the following command. `Data` folder contains the datasets for training. Running this command will create trained Cross Omics Translation Model which you can use for inference.
 
    ```bash
    python translation.py
 
-## How to Run Inference
+## Inference : Cross Omics Translation and AD Prediction
 
 1. **Prepare the Input Data**:
-  `Data/` folder contains gene expression, proteomics and DNA methylation datasets.
+  `Data` folder contains gene expression, proteomics and DNA methylation datasets.
 
 2. **Load the Pre-trained Model**:
-   The pre-trained model `trained_DeepRNAtwist.h5` is included in the repository. The inference script will load this model automatically to perform predictions.
+   The pre-trained models are included in `trained models` folder. You can either use these pretrained Cross Omics Translation Models or train them. 
 
 4. **Run the Inference**:
-   To perform inference on the provided dataset, run the following command:
+   To perform the experiment of gene expression and proteomics, run the following command:
    
    ```bash
-   python inference.py
+   python gene_prot.py
+   ```
+   To perform the experiment of gene expression and DNA methylation, run the following command:
+   
+   ```bash
+   python gene_dm.py
+   ```
+   To perform the experiment of DNA methylation and proteomics, run the following command:
+   
+   ```bash
+   python dm_prot.py
    ```
 
 
