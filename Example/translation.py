@@ -257,7 +257,7 @@ def train_model(path1,path2,vae_omic1, vae_omic2, discriminator_modality, discri
 
 
 
-#################################  Gene-DM Translation ################################################
+#################################  Translation ################################################
 
 
 
