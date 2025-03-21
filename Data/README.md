@@ -1,5 +1,4 @@
 """
-README - Data Folder for UnCOT-AD
 
 This folder contains the processed datasets used in the UnCOT-AD study for Alzheimer's Disease (AD) prediction 
 and cross-omics translation.
