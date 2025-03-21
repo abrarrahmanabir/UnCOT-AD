@@ -1,5 +1,3 @@
-"""
-
 This folder contains the processed datasets used in the UnCOT-AD study for Alzheimer's Disease (AD) prediction 
 and cross-omics translation.
 
@@ -40,5 +38,4 @@ These data files are used as inputs for training and evaluating the UnCOT-AD mod
 Please cite the original sources if using this data:
 - Park et al. (2020)
 - Shokhirev et al. (2022)
-"""
 
