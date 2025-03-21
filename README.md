@@ -70,6 +70,7 @@ To start the training process, execute the following command. `Data` folder cont
    cd Example
    python translation.py
    ```
+   Users can also load the pre-trained models to translate between omics modalities by specifying the appropriate model.
    
    
 
